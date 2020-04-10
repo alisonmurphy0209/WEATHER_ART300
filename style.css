@@ -4,8 +4,8 @@ body {
 }
 .header{
     height: 30vw;
-    background-color:  #B8C2E3;
-    position: relative
+    position: relative;
+    background-image:linear-gradient( #B1B8CC,#ffffff);
  
 
 }
@@ -15,28 +15,26 @@ body {
     position: absolute;
     right: 10px;
     top: 10px;
+    font-size: 1em;
     
 
 }
 .header .logo{
-    height: 5vw;
-    width: 15vw;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    background-color: white;
+    margin: 1vw;
 
 }
 .header .lastupdated{
     position: absolute;
     left: 10px;
-    bottom: 10px;
+    bottom: 20px;
+    font-size: 1em;
+    color:navy;
 }
 .header .big_current {
     position: absolute;
     right: 20px;
     bottom: 10px;
-    font-size: 4em;
+    font-size: 6em;
 }
 .location {
     display: grid;
@@ -184,7 +182,6 @@ body {
 .current_largeB .UV{
     margin: .5vw;
     font-size: small;
-    font-style:
 }
 .current_largeB .UV_INPUT{
     margin: .5vw;
@@ -663,7 +660,7 @@ body {
 }
 .week {
     display: grid;
-    height: 150vw;
+    height: 100vw;
     grid-template-areas: 
     "Monday Tuesday Wednesday"
     "Thursday Friday Saturday"
@@ -682,9 +679,7 @@ body {
 }
 .monday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
+   
 }
 .monday .temphigh {
     font-size: x-large;
@@ -708,9 +703,7 @@ body {
 }
 .tuesday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
+
 }
 .tuesday .temphigh {
     font-size: x-large;
@@ -732,17 +725,15 @@ body {
     padding: 1em;
     text-align: center;
 }
-.monday .wednesday {
+.wednesday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
+
 }
-.monday .wednesday {
+.wednesday .temphigh {
     font-size: x-large;
     text-align: center;
 }
-.monday .wednesday{
+.wednesday .temp-low {
     text-align: right;
     font-size: large;
 
@@ -752,6 +743,7 @@ body {
 }
 .wednesday .percent {
     text-align: right;
+
 }
 .week .thursday {
     background-color: #AA78B3;
@@ -760,9 +752,6 @@ body {
 }
 .thursday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
 }
 .thursday .temphigh {
     font-size: x-large;
@@ -784,25 +773,22 @@ body {
     padding: 1em;
     text-align: center;
 }
-.monday .friday {
+.friday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
 }
-.monday .friday {
+.friday .temphigh {
     font-size: x-large;
     text-align: center;
 }
-.monday .friday {
+.friday .temp-low {
     text-align: right;
     font-size: large;
 
 }
-.monday .friday {
+.friday .moon_icon {
     text-align: left;
 }
-.monday .friday {
+.friday .percent {
     text-align: right;
 }
 .week .saturday {
@@ -810,25 +796,22 @@ body {
     padding: 1em;
     text-align: center;
 }
-.monday .saturday {
+.saturday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
 }
-.monday .saturday {
+.saturday .temphigh {
     font-size: x-large;
     text-align: center;
 }
-.monday .saturday{
+.saturday .temp-low {
     text-align: right;
     font-size: large;
 
 }
-.monday .saturday {
+.saturday .moon_icon {
     text-align: left;
 }
-.monday .saturday {
+.saturday .percent {
     text-align: right;
 }
 .week .sunday {
@@ -836,27 +819,25 @@ body {
     padding: 1em;
     text-align: center;
 }
-.monday .sunday {
+.sunday .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
 }
-.monday .sunday {
+.sunday .temphigh {
     font-size: x-large;
     text-align: center;
 }
-.monday .sunday {
+.sunday .temp-low {
     text-align: right;
     font-size: large;
 
 }
-.monday .sunday {
+.sunday .moon_icon {
     text-align: left;
 }
-.monday .sunday {
+.sunday .percent {
     text-align: right;
 }
+
 .week .monday2 {
     background-color: #AA78B3;
     padding: 1em;
@@ -864,9 +845,6 @@ body {
 }
 .monday2 .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
 }
 .monday2 .temphigh {
     font-size: x-large;
@@ -890,9 +868,6 @@ body {
 }
 .tuesday2 .icon {
     text-align: center; 
-    font-size: xx-large;
-    max-width: 10%;
-    max-height: 10%;
 }
 .tuesday2 .temphigh {
     font-size: x-large;
@@ -912,9 +887,33 @@ body {
 .footer{
     height: 10vw;
     margin: 1vw;
-    background-color: #B8C2E3
+    background-color: #B8C2E3;
+    position: relative;
 }
 .footer .copyright {
     text-align: left;
+    position: absolute;
     left: 4vw;
+    top: 4vw;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    body {
+      background-color: white;
+    }
+  
+    h1 {
+      margin: 0;
+      font-size: 5vw;
+      line-height: 5vw;
+    }
+  
+    .example {
+      width: 80vw;
+    }
+  }
+  
+  /* Phone Styles */
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: white;
+    }
