@@ -13,8 +13,8 @@ body {
     height: 3vw;
     width: 25vw;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 1vw;
+    top: 1vw;
     font-size: 1em;
     
 
@@ -25,16 +25,16 @@ body {
 }
 .header .lastupdated{
     position: absolute;
-    left: 10px;
-    bottom: 20px;
+    left: 1vw;
+    bottom: 2vw;
     font-size: 1em;
     color:navy;
 }
 .header .big_current {
     position: absolute;
-    right: 20px;
-    bottom: 10px;
-    font-size: 6em;
+    right: 2vw;
+    bottom: 1vw;
+    font-size: 7em;
 }
 .location {
     display: grid;
@@ -45,31 +45,29 @@ body {
 .location .citystate {
     grid-area: "citystate";
     color: navy; 
-    margin: 1vw;
 }
 .location .cityname {
     grid-area: "cityname";
     color: navy;
-    margin: 1vw;
 }
 .location .zip {
     grid-area: "zip";
     color: navy;
-    margin: 1vw;
+
 }
 .location .zipname {
     grid-area: "zipname";
     color: navy;
-    margin: 1vw;
 }
 .location .weathersource {
     grid-area: "weathersource";
     color: navy;
-    margin: 1vw;
 }
 .current_bar {
     display: grid;
-    grid-gap: 1vw;
+    grid-gap: .5vw;
+    align-content: center;
+    padding: .5vw;
     background-color: #B1B8CC;
     grid-template-areas: "current_hour current_min ampm day_of_week month date sunrise_icon sunrise_time sunset_icon sunset_time" 
 }
@@ -77,66 +75,59 @@ body {
     grid-area: "current_hour";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_bar .current_min {
     grid-area: "current_min";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_bar .ampm {
     grid-area: "am/pm";
     font-style: light;
     color:white;
-    margin: .02vw;
 }
 .current_bar .day_of_week {
     grid-area: "day_of_week";
     font-style: normal;
     color:white;
-    margin: .02vw;
+
 }
 .current_bar .month {
     grid-area: "month";
     font-style: oblique;
     color:white;
-    margin: .02vw;
+
 }
 .current_bar .date {
     grid-area: "date";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_bar .sunrise_icon {
     grid-area: "sunrise_icon";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_bar .sunrise_time {
     grid-area: "sunrise_time";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_bar .sunset_icon {
     grid-area: "sunset_icon";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_bar .sunset_time {
     grid-area: "sunset_time";
     font-style: oblique;
     color:white;
-    margin: .02vw;
 }
 .current_large_top {
     height: 32vw;
     background-color: #AA78B3;
     position: relative;
+    padding: 1vw;
 }
 .current_large_top .large_icon {
     position: absolute;
@@ -147,25 +138,27 @@ body {
     position: absolute;
     left: 4vw;
     bottom: 10vw;
-    font-size: x-large;
+    font-size: 2em;
+    padding: 1vw;
 }
 .current_large_top .description_long{
     left: 6vw;
     bottom: 3vw;
-    font-size: small;
+    font-size: .9em;
     position: absolute;
 }
 .current_large_top .large_temp_high {
     position: absolute;
     right: 7vw;
     top: 1vw;
-    font-size: xx-large;
+    font-size: 5em;
 }
 .current_large_top .temp_low {
     position: absolute;
-    right: 4vw;
-    top: 3vw;
-    font-size: large;
+    right: 1vw;
+    top: 8vw;
+    font-size: 2em;
+
 }
 .current_largeB {
     background-color: #AA78B3;
@@ -181,11 +174,13 @@ body {
 }
 .current_largeB .UV{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    
 }
 .current_largeB .UV_INPUT{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .precipitation{
     margin: .5vw;
@@ -193,87 +188,98 @@ body {
 }
 .current_largeB .precipitation_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .feels_like{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .feels_like_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .humidity{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .humidity_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .COR{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .COR_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .pressure{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .pressure_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .windspeed{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .windspeed_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .type{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .type_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .visability{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .visability_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .winddirection{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .winddirection_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .road{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .road_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .current_largeB .accumulation{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
 }
 .current_largeB .accumulation_input{
     margin: .5vw;
-    font-size: small;
+    font-size: .8em;
+    font-style: oblique;
 }
 .hour1 {
     background-color: #B8C2E3;
@@ -314,27 +320,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour2 .hour_time {
-    font-size: medium;
+    font-size: .8e;
     margin: .3vw;
 }
 .hour2 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour2 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour2 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour2 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour2 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour3 {
@@ -345,27 +351,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour3 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour3 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour3 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour3 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour3 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour3 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour4 {
@@ -376,27 +382,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour4 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour4 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour4 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour4 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour4 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour4 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour5 {
@@ -407,27 +413,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour5 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour5 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour5 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour5 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour5 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour5 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour6 {
@@ -438,27 +444,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour6 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour6 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour6 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour6 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour6 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour6 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour7 {
@@ -469,27 +475,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour7 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour7 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour7 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour7 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour7 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour7 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour8 {
@@ -500,27 +506,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour8 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour8 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour8 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour8 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour8 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour8 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour9 {
@@ -531,27 +537,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour9 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour9 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour9 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour9 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour9 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour9 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour10 {
@@ -562,27 +568,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour10 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour10 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour10 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour10 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour10 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour10 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour11 {
@@ -593,27 +599,27 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour11 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour11 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour11 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour11 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour11 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour11 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour12 {
@@ -624,53 +630,54 @@ body {
     grid-template-areas: "hour_time hour_icon hour_description hour_temp rain_icon rain_percent"
 }
 .hour12 .hour_time {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour12 .hour_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour12 .hour_description {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour12 .hour_temp {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour12 .rain_icon {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
 .hour12 .rain_percent {
-    font-size: medium;
+    font-size: .8em;
     margin: .3vw;
 }
-.radar .map{
+.radar{
     margin: auto;
     margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  
 }
 .alerts {
     background-color: #B8C2E3;
-    height: 8vw;
     text-align: center;
+    font-size: 2em;
 }
 .week {
     display: grid;
-    height: 100vw;
     grid-template-areas: 
     "Monday Tuesday Wednesday"
     "Thursday Friday Saturday"
     "Sunday Monday2 Tuesday2"
     "Wednesday2";
-    grid-gap: 10px;
+    grid-gap: 4vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 1fr;
-    padding: 1em;
-    margin: 1em;
+    padding: 1vw;
+    margin: auto;
+    width: 50vw;
+    
 }
 .week .monday {
     background-color: #AA78B3;
@@ -901,16 +908,8 @@ body {
       background-color: white;
     }
   
-    h1 {
-      margin: 0;
-      font-size: 5vw;
-      line-height: 5vw;
+   
     }
-  
-    .example {
-      width: 80vw;
-    }
-  }
   
   /* Phone Styles */
   @media screen and (max-width: 768px) {
