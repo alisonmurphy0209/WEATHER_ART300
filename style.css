@@ -909,10 +909,14 @@ body {
     }
   
    
-    }
+    
   
   /* Phone Styles */
   @media screen and (max-width: 768px) {
     body {
       background-color: white;
     }
+
+input {
+    color: gray;
+}
