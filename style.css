@@ -917,6 +917,12 @@ body {
       background-color: white;
     }
 
-input {
-    color: gray;
+}
+
+input[type="text"], textarea {
+    background-color : white; 
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }

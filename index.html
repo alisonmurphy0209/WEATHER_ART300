@@ -6,72 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather</title>
     <script src="keys.js"></script>
+    <script
+      src="https://unpkg.com/@warnick/forecast-js/js/forecast.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@warnick/forecast-js/css/forecast.css"
+    />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="results" id="app"></div>
+        <div class="results" id="app">
+            
     <div class="header">
         <div class="logo"><img src="https://cdn.freebiesupply.com/images/large/2x/weather-logo-transparent.png" height="70vw" width="100vw"/></div>
         <div class="search">
-            <input type="text" id="name_1" name="fname" 
-                placeholder="Enter Zip Code" v-on:input="zip_trigger" id="zip_code" /></div>
+            <input type="text" id="name_1" name="fname" placeholder="Enter Zip Code" v-on:input="zip_trigger"id="zip_code"/>
+            </div> 
         <div class="lastupdated">Last updated:</div>
-        <div class="big_current">67°</div>
+        <div class="big_current">{{current.temp.current}}</div>
     </div>
     <div class="location">
         <div class="citystate">City/State</div>
-        <div class="cityname">_________________</div>
-        <div class="zip">Zip</div>
-        <div class="zipname">__________________</div>
+        <div class="cityname">{{location.name}}</div>
+        <div class="zipzip">Zip</div>
+        <div class="zip_code">{{location.zip}}</div>
         <div class="weathersource">WeatherSource</div>
     </div>
     <div class="current_bar" >
-        <div class="current_hour">2</div>
-        <div class="current_min">:15</div>
-        <div class="ampm">pm</div>
-        <div class="day_of_week">Wednesday</div>
-        <div class="month">April</div>
-        <div class="date">8</div>
+        <div class="current_hour">{{time.hour_12}}:{{time.minute}}:{{time.seconds}}</div>
+        <div class="date">{{time.date}}</div>
         <div class="sunrise_icon">x</div>
-        <div class="sunrise_time">6:43am</div>
+        <div class="sunrise_time">{{current.sunrise}}</div>
         <div class="sunset_icon">x</div>
-        <div class="sunset_time">7:26pm</div>
+        <div class="sunset_time">{{current.sunset}}</div>
     </div>
     <div class="current_large_top">
         <div class="large_icon"><img src=https://img.icons8.com/ios/100/000000/partly-cloudy-day.png height="150vh" width="200vh"/></div>
-        <div class="description_short">Party Cloudy</div>
-         <div class="description_long">Partly cloudy skies with a high of 
-                <br>67  a low of 41 degrees. High winds <br>with 
-                no precipitation </div>
-         <div class="large_temp_high">67°</div>
-        <div class="temp_low">/47°</div> 
+        <div class="description_short">{{current.description_main}}</div>
+         <div class="description_long">{{current.description_long}}</div>
+         <div class="large_temp_high">{{current.temp.current}}</div>
+        <div class="temp_low">{{current.temp.low}}</div> 
      </div>
      <div class="current_largeB">
         
         <div class="UV">UV</div>
-        <div class="UV_INPUT">2</div>
+        <div class="UV_INPUT">{{current.uv}}</div>
         <div class="humidity">Humidity</div>
-        <div class="humidity_input">45%</div>
+        <div class="humidity_input">{{current.humidity}}</div>
         <div class="windspeed">Wind Speed</div>
-        <div class="windspeed_input">NW</div>
-        <div class="winddirection">Wind Direction</div>
-        <div class="winddirection_input">NW</div>
+        <div class="windspeed_input">{{current.wind.speed}}</div>
         <div class="precipitation">Precipitation</div>
-        <div class="precipitation_input">0in</div>
-        <div class="COR">Chance of Rain</div>
-        <div class="COR_input">0%</div>
-        <div class="type">Type</div>
-        <div class="type_input">None</div>
-        <div class="Road">Road Condition</div>
-        <div class="road_input">Good</div>
-        <div class="accumulation">Accumulation</div>
-        <div class="accumulation_input">0</div>
+        <div class="precipitation_input">{{current.rain}}</div>
         <div class="feels_like">Feels like</div>
-        <div class="feels_like_input">65</div>
+        <div class="feels_like_input">{{current.temp.feelslike}}</div>
         <div class="pressure">Pressure</div>
-        <div class="pressure_input">30.5inHg</div>
-        <div class="visability">Visability</div>
-        <div class="visability_input">10mi</div>
+        <div class="pressure_input">{{current.pressure}}</div>
     </div>
   
     <div class="hourly">
@@ -252,7 +243,7 @@
               <div class="copyright">Copyright 2020</div>
           </div>
 
-            </div>
+        
         </div>
 
 
