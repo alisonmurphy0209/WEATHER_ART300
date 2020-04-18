@@ -19,6 +19,17 @@ body {
     
 
 }
+
+input[type="text"],
+textarea {
+  background-color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
 .header .logo{
     margin: 1vw;
 
@@ -909,7 +920,7 @@ body {
     }
   
    
-    
+}
   
   /* Phone Styles */
   @media screen and (max-width: 768px) {
@@ -917,12 +928,4 @@ body {
       background-color: white;
     }
 
-}
-
-input[type="text"], textarea {
-    background-color : white; 
-}
-
-input:focus, textarea:focus, select:focus{
-    outline: none;
 }

@@ -22,7 +22,8 @@
     <div class="header">
         <div class="logo"><img src="https://cdn.freebiesupply.com/images/large/2x/weather-logo-transparent.png" height="70vw" width="100vw"/></div>
         <div class="search">
-            <input type="text" id="name_1" name="fname" placeholder="Enter Zip Code" v-on:input="zip_trigger"id="zip_code"/>
+            <input type="text" name="fname" placeholder="Enter
+            Zip Code" v-on:input="zip_trigger" id="zip"/>
             </div> 
         <div class="lastupdated">Last updated:</div>
         <div class="big_current">{{current.temp.current}}</div>
@@ -35,6 +36,7 @@
         <div class="weathersource">WeatherSource</div>
     </div>
     <div class="current_bar" >
+            <p v-bind:class="time.day">{{time.day}}</p>
         <div class="current_hour">{{time.hour_12}}:{{time.minute}}:{{time.seconds}}</div>
         <div class="date">{{time.date}}</div>
         <div class="sunrise_icon">x</div>
@@ -174,69 +176,69 @@
                     CLICK HERE</div>
 
             <div class="week">
-                <div class="monday">Monday
+                <div class="monday">{{forecast[1].weekday}}
                 <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                <div class="temphigh">67°</div>
-                <div class="temp-low">/47°</div>
+                <div class="temphigh">{{forecast[1].max_temp}}</div>
+                <div class="temp-low">/{{forecast[1].min_temp}}</div>
                 <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                <div class="percent">0%</div>
+                <div class="percent">{{forecast[1].precip}}</div>
             </div>
-            <div class="tuesday">Tuesday
+            <div class="tuesday">{{forecast[2].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[2].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[2].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[2].precip}}</div>
                 
             </div>
-            <div class="wednesday">Wednesday
+            <div class="wednesday">{{forecast[3].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[3].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[3].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[3].precip}}</div>
             </div>
-            <div class="thursday">Thursday
+            <div class="thursday">{{forecast[4].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[4].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[4].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[4].precip}}</div>
             </div>
-            <div class="friday">Friday
+            <div class="friday">{{forecast[5].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[5].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[5].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[5].precip}}</div>
             </div>
-            <div class="saturday">Saturday
+            <div class="saturday">{{forecast[5].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[5].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[5].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[5].precip}}</div>
             </div>
-            <div class="sunday">Sunday
+            <div class="sunday">{{forecast[6].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[6].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[6].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[6].precip}}</div>
             </div>
-            <div class="monday2">Monday
+            <div class="monday2">{{forecast[7].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">67°</div>
-                    <div class="temp-low">/47°</div>
+                    <div class="temphigh">{{forecast[7].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[7].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[7].precip}}</div>
                 </div>
-            <div class="tuesday2">Tuesday
+            <div class="tuesday2">{{forecast[8].weekday}}
                     <div class="icon"><img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day.png"/></div>
-                    <div class="temphigh">/67°</div>
-                    <div class="temp-low">47°</div>
+                    <div class="temphigh">{{forecast[8].max_temp}}</div>
+                    <div class="temp-low">/{{forecast[8].min_temp}}</div>
                     <div class="moon_icon"><img src=https://cdn.onlinewebfonts.com/svg/img_39469.png height="20vw" width="20vw"></div>
-                    <div class="percent">0%</div>
+                    <div class="percent">{{forecast[8].precip}}</div>
             </div>
             </div>
           <div class="footer">
