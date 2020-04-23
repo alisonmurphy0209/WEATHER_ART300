@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: navy;
+    color:white;
 }
 .header{
     height: 30vw;
@@ -449,6 +449,7 @@ select:focus {
 .week .monday {
     background-color: #AA78B3;
     text-align: center;
+    font-style: oblique;
 }
 .monday .temphigh {
     font-size: x-large;
@@ -469,6 +470,7 @@ select:focus {
     background-color: #AA78B3;
     padding: 1em;
     text-align: center;
+    font-style: oblique;
 }
 .tuesday .icon {
     text-align: center; 
@@ -493,6 +495,7 @@ select:focus {
     background-color: #AA78B3;
     padding: 1em;
     text-align: center;
+    font-style: oblique;
 }
 .wednesday .icon {
     text-align: center; 
@@ -518,6 +521,7 @@ select:focus {
     background-color: #AA78B3;
     padding: 1em;
     text-align: center;
+    font-style: oblique;
 }
 .thursday .icon {
     text-align: center; 
@@ -541,6 +545,7 @@ select:focus {
     background-color: #AA78B3;
     padding: 1em;
     text-align: center;
+    font-style: oblique;
 }
 .friday .icon {
     text-align: center; 
@@ -587,6 +592,7 @@ select:focus {
     background-color: #AA78B3;
     padding: 1em;
     text-align: center;
+    font-style: oblique;
 }
 .sunday .icon {
     text-align: center; 
@@ -611,6 +617,7 @@ select:focus {
     background-color: #AA78B3;
     padding: 1em;
     text-align: center;
+    font-style: oblique;
 }
 .monday2 .icon {
     text-align: center; 
